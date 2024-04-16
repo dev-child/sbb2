@@ -1,3 +1,15 @@
 <html layout:decorate="~{layout/layout}">
-
+<div layout:fragment="content" class="container">
+    <h2 class="my-3 border-bottom pb-2">질문 등록</h2>
+    <form>
+        <div>
+            <label>제목</label>
+            <input type="text" name="subject" id="subject">
+        </div>
+        <div>
+            <label>내용</label>
+        </div>
+        <input type="submit" value="저장하기" class="btn btn-dark">
+    </form>
+</div>
 </html>
