@@ -1,13 +1,14 @@
 <html layout:decorate="~{layout/layout}">
 <div layout:fragment="content" class="container">
     <h2 class="my-3 border-bottom pb-2">질문 등록</h2>
-    <form>
-        <div>
+    <form th:action="@{/question/create}" method="post">
+        <div class="my-3">
             <label>제목</label>
-            <input type="text" name="subject" id="subject">
+            <input type="text" name="subject" id="subject" class="form-control">
         </div>
         <div>
             <label>내용</label>
+            <textarea type="text" name="content" id="content" class="form-control" rows="5"></textarea>
         </div>
         <input type="submit" value="저장하기" class="btn btn-dark">
     </form>
